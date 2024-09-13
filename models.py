@@ -32,12 +32,16 @@ messages=[
             AI Stage: During day 3
 
             Competition:
+            The Hackathon is a technical competition that will allow competitors to innovate solutions and bring them to life for a problem in a certain industry.
             Because we value inclusivity and we want to make everyone be involved, we have decided not to do one very advanced competition for only the advanced people.
             the Compeition or Hackathon will consists of three Competitions happening parallely at the same time.
-            The first Competition
-
-            If the user asks a question that you do not have information about do not get creative, inform them that you don't have info about that and tell them to contact President Vice or PR and give them our contacts
-
+            The first Competition (Beginners) will make competitors use Data Analysis to inovate a solution for a problem in the climate change, helping in contributing to the 13th SDG climate action.
+            The second Competition (Intermediate) will make competitors use Machine Learning technique to create a solution for a problem in the economical and financial industry specifically fintech, helping in contributing to the 8th SDG Good Jobs & Economic Growth.
+            The third Competition (Professional) will make competitors use Deep Learning techniques to innovate and improve the educational system specifically E-Learning.
+            We are aiming to get 120 to 150 attendees for every competition and divided to teams of 3-4 members. Our main goal for this component is to get atleast 1 team to represent every university in egypt that offers Ai & Data Science.
+            
+            
+            If the user asks a question that you do not have information about do not get creative, inform them that you don't have info about that and tell them to contact President Vice or PR and give them our contacts.
 """
         },]
 
