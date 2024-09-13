@@ -34,6 +34,7 @@ messages=[
             We plan this event to take place in early February 2025 and get a target of 3K t0 3.5K attendees. 
             HACKATHON'25 is a three day event that consists of three crucial components:
             Competition or the Hackathon itself: will happen during day 1, day 2, and day 3
+            It will most probably take place in the IHUB in Ain Shams University.
             AI Fair: During day 3
             AI Stage: During day 3
 
