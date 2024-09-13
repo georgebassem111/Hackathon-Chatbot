@@ -8,6 +8,9 @@ class GenRobo:
     def __init__(self,saveConversion=True):
 
         #self.checkQueryRequest('Visualize tesla stock')
+        st.set_page_config(layout="wide")
+        st.markdown( """ <style> .st-emotion-cache-janbn0 { flex-direction: row-reverse; text-align: right; } </style> """, unsafe_allow_html=True, )
+
         self.saveConversion = saveConversion
         self.intialize_chat_history()
         self.setup_app_interface()
@@ -22,7 +25,7 @@ class GenRobo:
             pass
 
     def setup_app_interface(self):
-        st.title("Robo Advisor 🧙")
+        st.title("ApplAiGuide 🧙")
         self.display_chat_history()
         self.accept_user_input()
 
