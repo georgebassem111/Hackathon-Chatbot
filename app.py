@@ -10,7 +10,7 @@ class GenRobo:
         #self.checkQueryRequest('Visualize tesla stock')
         st.set_page_config(layout="wide")
         st.markdown( """ <style> .st-emotion-cache-janbn0 { flex-direction: row-reverse; text-align: right; } </style> """, unsafe_allow_html=True, )
-        with open( "app\style.css" ) as css:
+        with open( "style.css" ) as css:
             st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
         self.saveConversion = saveConversion
