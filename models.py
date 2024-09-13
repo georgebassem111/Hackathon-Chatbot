@@ -89,10 +89,7 @@ main_model='llama3-70b-8192'
 @retry(stop_never,wait_exponential(2))  
 def generic_response(user_prompt):
     
-    if len(messages)>10:
-        messages=clean_messages(messages,3)
-
-
+    
     messages.append({
             "role": "user",
             "content": user_prompt,
@@ -103,29 +100,3 @@ def generic_response(user_prompt):
         stream=True
                 )
     return response
-
-
-def clean_messages(messages, times):
-    """
-    Removes elements from a list of messages until it reaches and includes an 'assistant' role.
-    Repeats the process for a specified number of times.
-
-    Parameters:
-    - messages: List of message dictionaries.
-    - times: Number of times to repeat the cleanup.
-
-    Returns:
-    - A list of cleaned messages.
-    """
-    # Always keep the first message as the system instruction
-    cleaned_messages = [messages[0]] 
-    counter=0
-    for i in range(1, len(messages)):
-        if messages[i]['role'] == 'assistant':
-            counter+=1
-        
-        if counter==times:
-            cleaned_messages.extend(messages[i+1:])
-            return cleaned_messages
-    
-    return messages
