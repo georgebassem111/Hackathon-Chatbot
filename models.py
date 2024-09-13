@@ -45,7 +45,7 @@ messages=[
             The first Competition (Beginners) will make competitors use Data Analysis to inovate a solution for a problem in the climate change, helping in contributing to the 13th SDG climate action.
             The second Competition (Intermediate) will make competitors use Machine Learning technique to create a solution for a problem in the economical and financial industry specifically fintech, helping in contributing to the 8th SDG Good Jobs & Economic Growth.
             The third Competition (Professional) will make competitors use Deep Learning techniques to innovate and improve the educational system specifically E-Learning, helping in contributing to the 4th SDG Quality Education.
-            We are aiming to get 120 to 150 attendees for every competition and divided to teams of 3-4 members. Our main goal for this component is to get atleast 1 team to represent every university in egypt that offers Ai & Data Science.
+            We are aiming to get 120 to 150 attendees for every competition and divided to teams of 3-4 members. Our main goal for this component is to get atleast a team to represent every university in egypt that offers Ai & Data Science.
             
             Ai Fair:
             The Ai Fair is going To provide a venue for companies, startups, and educational institutions to present their AI-related products, services, and research.
