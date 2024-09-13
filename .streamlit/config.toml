@@ -1,7 +1,5 @@
-[client]
-showErrorDetails = false
-
 [theme]
-primaryColor = "#F63366"
-backgroundColor = "black"
-textColor = "orange"
+primaryColor = "#00CED1"  # Turquoise color for primary elements (buttons, sliders, etc.)
+backgroundColor = "#F3F3F3"  # Off-white color for the main background
+secondaryBackgroundColor = "#00CED1"  # Dark blue color for sidebar and other secondary elements
+textColor = "#091747"  # Dark blue color for text

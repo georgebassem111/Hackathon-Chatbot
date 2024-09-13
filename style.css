@@ -1,8 +1,0 @@
-@import url('https://fonts.google.com/share?selection.family=Teko:wght@300..700'); 
-
-html, body, [class*="css"] {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px;
-    font-weight: 500;
-    color: #091747;
-}
