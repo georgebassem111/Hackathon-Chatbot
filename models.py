@@ -32,7 +32,7 @@ messages=[
             AI Stage: During day 3
 
             the Compeition or Hackathon will consists of three Competitions happening parallely at the same time.
-            
+            If the user asks a question that you do not have information about do not get creative, inform them that you don't have info about that and tell them to contact President Vice or PR and give them our contacts
 
 """
         },]
