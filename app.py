@@ -74,7 +74,7 @@ class GenRobo:
         if "messages" not in st.session_state:
             st.session_state.messages = []
             # Add greeting message to chat history
-            first_message = "Mared🧙: Good Morning. I am Mared, a Smart Assistant for Ejada Investing Services. How can I assist you today?"
+            first_message = "ApplAiGuide🧙: Good Morning. I am ApplAiGuide, a Smart Assistant for ApplAi's Student Community. How can I assist you today? I can tell you everything about our community and project idea!"
             st.session_state.messages.append({"role": "assistant", "content": first_message})
 
     # def stream_ans(self,response):
