@@ -71,15 +71,11 @@ messages=[
                 Technical Demos: Demonstrations of new technologies, tools, and applications developed by researchers and companies.
                 Innovation Showcases
 
-                Product Launches: Announcements and demonstrations of new AI products and services from startups and established companies.
-                Technology Showcases: Highlighting breakthrough technologies and novel applications of AI.
-                Workshops and Tutorials
-
                 Hands-On Sessions: Interactive workshops where participants can learn about specific AI techniques, tools, and methodologies.
                 Skill Development: Sessions focused on developing practical skills and knowledge in AI.
                 Fireside Chats
 
-Informal Discussions: Conversations between notable figures in AI, providing personal insights and stories about their experiences and views on the future of AI.
+                Informal Discussions: Conversations between notable figures in AI, providing personal insights and stories about their experiences and views on the future of AI.
             
             If the user asks a question that you do not have information about do not get creative, inform them that you don't have info about that and tell them to contact President Vice or PR and give them our contacts.
 
