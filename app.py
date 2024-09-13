@@ -1,0 +1,96 @@
+import time
+import datetime
+import streamlit as st
+from models import generic_response,messages
+import os
+
+class GenRobo:
+    def __init__(self,saveConversion=True):
+
+        #self.checkQueryRequest('Visualize tesla stock')
+        self.saveConversion = saveConversion
+        self.intialize_chat_history()
+        self.setup_app_interface()
+
+    def __decoding(self,response): 
+        try:
+            for r in response:
+                    for x in r.choices[0].delta.content:
+                        time.sleep(0.01)
+                        yield x
+        except Exception as e:
+            pass
+
+    def setup_app_interface(self):
+        st.title("Robo Advisor 🧙")
+        self.display_chat_history()
+        self.accept_user_input()
+
+    
+    def display_chat_history(self):
+        for message in st.session_state.messages:
+            if message['role'] == 'user':
+                with st.chat_message(message["role"]):
+                    st.markdown(message["content"])
+            elif message['role'] == 'assistant':
+                with st.chat_message(message["role"],avatar='🧙'):
+                    st.markdown(message["content"])
+            # if message['role'] == 'assistant_image':
+            #     blk = message['content']
+            #     st.plotly_chart(plot_stock(blk.input['stock_symbol']))
+            
+
+    def accept_user_input(self):
+        if prompt := st.chat_input("Enter your query:"):
+            with st.chat_message("user"):
+                st.markdown(prompt)
+                if self.saveConversion:
+                    self.saveConvTextFile("", f"{prompt}")
+                
+                
+            st.session_state.messages.append({"role": "user", "content": prompt})
+            self.generate_response(prompt)
+    
+    def generate_response(self, user_input):
+        with st.spinner("Generating response..."):
+            response= generic_response(user_input)
+            self.display_assistant_response(response)
+
+    
+    def display_assistant_response(self, response):
+        with st.chat_message("assistant",avatar='🧙'):
+            bot_response=st.write_stream(self.__decoding(response))
+            if self.saveConversion:
+                self.saveConvTextFile("", f"{response}")
+        st.session_state.messages.append({"role": "assistant", "content": bot_response})
+        messages.append({
+                "role": "assistant",
+                "content": bot_response,
+            })
+    
+
+
+    def intialize_chat_history(self):
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+            # Add greeting message to chat history
+            first_message = "Mared🧙: Good Morning. I am Mared, a Smart Assistant for Ejada Investing Services. How can I assist you today?"
+            st.session_state.messages.append({"role": "assistant", "content": first_message})
+
+    # def stream_ans(self,response):
+    #     for word in response.split(" "):
+    #         yield word + " "
+    #         time.sleep(0.05)
+    
+    def saveConvTextFile(self, filename, text):
+        pass
+    
+    # def checkQueryRequest(self,prompt):
+    #     classifier = pipeline("zero-shot-classification",model="facebook/bart-large-mnli")
+    #     sequence_to_classify = prompt
+    #     candidate_labels = ['Question','Table','Plot']
+    #     result = classifier(sequence_to_classify, candidate_labels)
+    #     print(result)
+
+if __name__ == "__main__":
+    GenRobo(saveConversion=True)
