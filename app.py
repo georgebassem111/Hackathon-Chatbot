@@ -9,7 +9,7 @@ class GenRobo:
 
         #self.checkQueryRequest('Visualize tesla stock')
         st.set_page_config(layout="wide")
-        st.markdown( """ <style> .st-emotion-cache-janbn0 { flex-direction: row-reverse; text-align: right; } </style> """, unsafe_allow_html=True, )
+        st.markdown( """<style> .st-emotion-cache-janbn0 { flex-direction: row-reverse; text-align: right; } </style> """, unsafe_allow_html=True, )
 
         self.saveConversion = saveConversion
         self.intialize_chat_history()
