@@ -25,7 +25,7 @@ class GenRobo:
             pass
 
     def setup_app_interface(self):
-        st.title("ApplAiGuide 🧙")
+        st.title("ApplAiGuide")
         self.display_chat_history()
         self.accept_user_input()
 
@@ -36,7 +36,7 @@ class GenRobo:
                 with st.chat_message(message["role"]):
                     st.markdown(message["content"])
             elif message['role'] == 'assistant':
-                with st.chat_message(message["role"],avatar='🧙'):
+                with st.chat_message(message["role"],avatar='applai logo.png'):
                     st.markdown(message["content"])
             # if message['role'] == 'assistant_image':
             #     blk = message['content']
