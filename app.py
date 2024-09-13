@@ -62,10 +62,17 @@ class GenRobo:
     
     def display_assistant_response(self, response):
         with st.chat_message("assistant",avatar='applai logo.png'):
-            bot_response=st.write_stream(self.__decoding(response))
+            try:
+                bot_response=st.write_stream(self.__decoding(response))
+            except Exception as e: 
+                print(e)
+                bot_response=st.write('Please Try Again Later')
+                bot_response='Please Try Again Later'
+                
             if self.saveConversion:
                 self.saveConvTextFile("", f"{response}")
         st.session_state.messages.append({"role": "assistant", "content": bot_response})
+
         messages.append({
                 "role": "assistant",
                 "content": bot_response,
