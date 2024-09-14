@@ -86,7 +86,7 @@ messages=[
 client = Groq(api_key='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')
 main_model='llama3-70b-8192'
 
-# @retry(stop_never,wait_exponential(2))  
+@retry(stop_never,wait_exponential(2))
 def generic_response(user_prompt):
     
     
